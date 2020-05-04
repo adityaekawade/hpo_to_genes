@@ -15,4 +15,6 @@ output.then(res => {
     return getListOfTermsAndIds();
 }).then(response => {
     console.log("All files have been successfully created"); 
+}).catch(error => {
+    console.log(error); 
 })

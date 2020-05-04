@@ -9,7 +9,6 @@ function getHpoGenes(){
                 reject("error getting the file")
             }
             var hpo_obj = {};
-            console.log("data", data[data.length-1])
             data.map(obj => {
                 if (obj.hpo_id !== ''){
                     if (hpo_obj[obj.hpo_id] === undefined) {

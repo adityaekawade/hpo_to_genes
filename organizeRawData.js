@@ -4,6 +4,9 @@ var jsonFormat = require('json-format');
 function organizeRawData(){
     return new Promise((resolve, reject) => {
         let data = fs.readFile('./data/hpo.txt', 'utf8', (err, res) => {
+            if(err){
+                reject(err); 
+            }
             var r = [];
             var result = [];
             res.split("\n").forEach(function (rec) {
