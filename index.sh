@@ -14,8 +14,9 @@ npm install
 
 
 # Curl and get the updated data
+# Download link from website: https://hpo.jax.org/app/download/annotation
 echo "Fetching the updated data"
-curl http://compbio.charite.de/jenkins/job/hpo.annotations/lastSuccessfulBuild/artifact/util/annotation/phenotype_to_genes.txt > data/phenotype_to_genes.tsv
+curl https://ci.monarchinitiative.org/view/hpo/job/hpo.annotations/lastSuccessfulBuild/artifact/rare-diseases/util/annotation/phenotype_to_genes.txt > data/phenotype_to_genes.tsv
 
 
 # Clean the data
